@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply h-full bg-backdrop text-white antialiased;
+  }
+  #root {
+    @apply flex flex-col;
+  }
+  .wrapper {
+    height: calc(100% - theme("spacing.24"));
+    @apply flex;
+  }
+  .override-position {
+    @apply static;
+  }
+  element.style {
+    left: 10px !important;
+    position: static !important;
+  }
+  .menu-item {
+    @apply h-10 flex gap-x-4 items-center text-sm font-semibold text-link hover:text-white px-4 rounded;
+  }
+
+  .menu-item-active {
+    @apply bg-active text-white;
+  }
+}
