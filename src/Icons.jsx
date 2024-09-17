@@ -112,11 +112,26 @@ const RightArrow = ({ size }) => {
     <svg
       data-encore-id="icon"
       role="img"
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      className="Svg-sc-ytk21e-0 bneLcE"
+      viewBox="-4 -5 26 26"
       width={size}
       height={size}
+    >
+      <path
+        fill="#fff"
+        d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"
+      ></path>
+    </svg>
+  );
+};
+const LeftArrow = ({ size }) => {
+  return (
+    <svg
+      data-encore-id="icon"
+      role="img"
+      viewBox="-4 -5 26 26"
+      width={size}
+      height={size}
+      transform="rotate(180)"
     >
       <path
         fill="#fff"
@@ -135,6 +150,7 @@ const Icon = ({ name, size = 24 }) => {
     hearthicon: HearthIcon,
     download: DownloadIcon,
     rightarrow: RightArrow,
+    leftarrow: LeftArrow,
   };
 
   const Component = icons[name];
