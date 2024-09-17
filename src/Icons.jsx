@@ -107,6 +107,24 @@ const DownloadIcon = ({ size }) => {
     </svg>
   );
 };
+const RightArrow = ({ size }) => {
+  return (
+    <svg
+      data-encore-id="icon"
+      role="img"
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className="Svg-sc-ytk21e-0 bneLcE"
+      width={size}
+      height={size}
+    >
+      <path
+        fill="#fff"
+        d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"
+      ></path>
+    </svg>
+  );
+};
 
 const Icon = ({ name, size = 24 }) => {
   const icons = {
@@ -116,6 +134,7 @@ const Icon = ({ name, size = 24 }) => {
     plusicon: PlusIcon,
     hearthicon: HearthIcon,
     download: DownloadIcon,
+    rightarrow: RightArrow,
   };
 
   const Component = icons[name];
